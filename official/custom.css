@@ -1,0 +1,186 @@
+:root {
+
+    --blue-font-standard: rgb(214, 224, 255);
+    --red-font-standard: rgb(255, 214, 214);
+    --blue-text-shadow: 
+
+        0 0 8px rgb(0, 140, 255),
+        0 0 14px rgba(0, 153, 255, 0.8),
+        0 0 20px rgba(0, 140, 255, 0.4),
+        0 0 80px rgba(0, 132, 255, 0.2);
+
+    --red-text-shadow:
+
+        0 0 8px rgb(255, 0, 0.1),
+        0 0 14px rgba(255, 0, 0, 0.8),
+        0 0 20px rgba(255, 0, 0, 0.4),
+        0 0 80px rgba(255, 0, 0, 0.2);
+    
+    --body-color: linear-gradient(
+
+        to right,
+        rgb(40, 40, 40),
+        rgb(20, 20, 20),
+        rgb(20, 20, 20),
+        rgb(20, 20, 20),
+        rgb(40, 40, 40));
+
+}
+
+body {
+
+    background: var(--body-color);
+
+}
+
+.text-center {
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    text-shadow: 
+    
+        0 0 8px rgb(0, 140, 255),
+        0 0 10px rgba(0, 153, 255, 0.4),
+        0 0 15px rgba(0, 140, 255, 0.2),
+        0 0 20px rgba(0, 132, 255, 0.1);
+        
+    color: rgb(121, 152, 255);
+
+}
+
+.date-class {
+
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    top: 40px;
+    color: var(--blue-font-standard);
+    text-shadow: var(--blue-text-shadow);
+
+}
+
+.date-time-diff-class {
+
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    right: 10px;
+    
+}
+
+.list-group {
+
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.list-group-item-danger {
+
+    box-shadow: 0 0 8px rgba(255, 0, 0, 1),
+        0 0 14px rgba(255, 0, 0, 0.8),
+        0 0 20px rgba(255, 0, 0, 0.4),
+        0 0 80px rgba(255, 0, 0, 0.2);
+
+}
+
+.list-group-item-success {
+
+    box-shadow: 0 0 8px rgba(0, 255, 0, 1),
+        0 0 14px rgba(0, 255, 0, 0.8),
+        0 0 20px rgba(0, 255, 0, 0.4),
+        0 0 80px rgba(0, 255, 0, 0.2);
+    
+}
+
+.list-group-item {
+
+    height: 150px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    line-height: 110px;
+    text-shadow: 
+
+        rgb(50, 248, 67) 0%,
+        rgb(92, 241, 92) 50%,
+        rgb(12, 246, 24) 51%,
+        rgb(23, 240, 52) 71%,
+        rgb(39, 231, 97) 100%;
+
+    text-shadow: 1px 1px 1px rgb(0, 3, 49), 1px 1px 1px rgb(0, 3, 49); 
+
+}
+
+.form-group {
+
+    position: relative;
+    top: 80px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+
+}
+
+.form-control {
+    
+    margin-top: 10px;
+    height: 80px;
+    font-size: 22px;
+
+}
+
+.form-control-label {
+
+    margin-top: 10px;
+    color: var(--blue-font-standard);
+    text-shadow: var(--blue-text-shadow);
+
+}
+
+.btn-primary {
+
+    position: relative;
+    top: 80px;
+    margin-bottom: 200px;
+    font-size: 22px;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(
+
+        to bottom,
+        rgb(50, 136, 248) 0%,
+        rgb(95, 92, 241) 50%,
+        rgb(55, 12, 246) 51%,
+        rgb(56, 23, 240) 71%,
+        rgb(58, 39, 231) 100%);
+
+}
+
+.btn-success {
+
+    font-size: 22px;
+    color: black;
+    background: linear-gradient(
+
+        to bottom,
+        rgb(50, 248, 67) 0%,
+        rgb(92, 241, 92) 50%,
+        rgb(12, 246, 24) 51%,
+        rgb(23, 240, 52) 71%,
+        rgb(39, 231, 97) 100%);
+
+}
+
+.btn-danger {
+
+    font-size: 22px;
+    background: linear-gradient(
+
+        to bottom,
+        rgb(248, 50, 50) 0%,
+        rgb(241, 92, 92) 50%,
+        rgb(246, 12, 12) 51%,
+        rgb(240, 23, 23) 71%,
+        rgb(231, 39, 39) 100%);
+
+}
