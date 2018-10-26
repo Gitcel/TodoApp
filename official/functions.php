@@ -61,9 +61,20 @@
 
     }
     // Function to update a task / item. //
-    function update_todo_item($key, $item) {
+    function update_todo_item($updatedKey, $updatedItem, $updatedDate = "") {
 
-        $_SESSION['todoItem'][$key]['item'] = $item;
+        if (empty($updatedDate)) {
+
+            $_SESSION['todoItem'][$updatedKey]['item'] = $updatedItem;
+        
+        }
+        
+        else if (!empty($updatedDate)) {
+
+            $_SESSION['todoItem'][$updatedKey]['item'] = $updatedItem;
+            $_SESSION['todoItem'][$updatedKey]['date'] = $updatedDate;
+
+        }
 
     }
  
