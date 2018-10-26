@@ -52,19 +52,19 @@
     
         // When an Edit button is clicked. //
         if(isset($_POST['edit'])) {                      
-            $_SESSION['editKey'] = $_POST['edit'];            
-            echo "<br><h2 style='color: red;'>Edit button pressed. Key: ".$_SESSION['editKey']."</h2><br>";            
+            $_SESSION['editKey'] = $_POST['edit'];                        
         }
 
         // When the Update button is clicked. //
         if(isset($_POST['update'])) {
-            echo "<br><h2 style='color: red;'>Update button pressed. Key: ".$_SESSION['editKey']."</h2><br>";  
+  
             $updatedTask = $_POST['todoItem'];
             $_SESSION['editDate'] = "";
             
             if (!empty($_POST['todoDate'])) {
+
                 $_SESSION['editDate'] = $_POST['todoDate'];
-                echo "<br><h2 style='color: red;'>Update button pressed. Date: ".$_SESSION['editDate']."</h2><br>";
+            
             }
 
             update_todo_item($_SESSION['editKey'], $updatedTask, $_SESSION['editDate']);
